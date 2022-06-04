@@ -38,10 +38,6 @@ msgstr "Agrumes"
 msgid "Fruttato"
 msgstr "Fruité"
 
-#: SayFarmHelpers.php:37
-msgid "Not Available"
-msgstr "Indisponible"
-
 #: archive.php:23
 msgid "View All"
 msgstr "Voir tout"

@@ -51,7 +51,7 @@ class CustomPostType extends BaseController
 			// 'cmb_styles' => false, // false to disable the CMB stylesheet
 			// 'closed'     => true, // Keep the metabox closed by default
 		) );
-		
+
 		// Category for archive
 		$cmb->add_field( array(
 			'name'             => 'Wlsfcpt Category',

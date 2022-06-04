@@ -1,0 +1,289 @@
+$bgPop: #000000;
+$white: #fff;
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+/*--- Bottom Sticky Bar---*/
+.btm-sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  // line-height: 50px;
+  background: $bgPop;
+  z-index: 9999;
+  transition: all .3s;
+  box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .6);
+
+  // Closing
+  // Sticky close ads
+  .sticky-ads-close {
+    width: 40px;
+    height: 40px;
+    top: -35px;
+    // width: 30px;
+    // height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 0 0;
+    position: absolute;
+    right: 0;
+    // top: -25px;
+    background-color: $bgPop; // #fefefe;
+    box-shadow: 0 -4px 18px 0 rgba(9, 32, 76, .6);
+    cursor: pointer;
+
+    svg {
+      width: 22px;
+      height: 22px;
+      fill: $white; // #000;
+    }
+  }
+
+  .btm-cta-link {
+    display: block;
+    position: relative;
+  }
+
+  // Popup Container
+  .popup-container {
+    position: relative !important;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+
+    /*-- Container like Bootstrap --*/
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+
+    &>* {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-height: 10vh;
+    }
+
+    &>.pull-center {
+      padding: 0 4%;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: auto;
+
+      h3,
+      p {
+        margin: 0;
+        line-height: initial;
+        color: $white;
+      }
+
+      p {
+        position: relative;
+
+        .link {
+          position: absolute;
+          margin-left: 5px;
+          transition: all .3ms ease-in-out;
+          left: 101%;
+
+          @include keyframes(moveBtmArrow) {
+            10% {
+              // transform: translateY(5px);
+              margin-left: 10px;
+            }
+
+            20% {
+              margin-left: 5px;
+            }
+
+            30% {
+              margin-left: 10px;
+            }
+
+            40% {
+              margin-left: 5px;
+            }
+
+            // 65% {
+            //   margin-left: 5px;
+            // }
+          }
+
+          @include animate(moveBtmArrow, 2s, linear, infinite);
+          // animation: moveBtmArrow ease-in 1s infinite;
+          // animation: moveBtmArrow 1s ease-in-out infinite;
+        }
+      }
+    }
+  }
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btm-sticky .pull-left img {
+  position: relative;
+  max-width: 240px;
+  // top: 4px;
+  left: 0;
+}
+
+.btm-sticky .pull-left img.small {
+  display: none;
+}
+
+
+.btm-sticky .pull-center p {
+  transition: all .3s;
+}
+
+.pull-right img {
+  position: relative;
+  // max-width: 185px;
+  // top: -20px;
+  // right: 0;
+  top: -35px;
+  right: 0;
+  height: 185px;
+  max-width: fit-content;
+}
+
+@media (max-width:960px) {
+  .btm-sticky {
+    // .sticky-ads-close {
+    //   width: 40px;
+    //   height: 40px;
+    //   top: -35px;
+    // }
+
+    .popup-container {
+      grid-template-columns: .5fr 3.5fr 1fr;
+    }
+  }
+
+  .btm-sticky .pull-left img {
+    max-width: 100px;
+    top: 5px;
+    // left: 10px;
+    left: 0;
+  }
+
+  .btm-sticky .pull-right img {
+    // max-width: 145px;
+    // top: -10px;
+    // right: 10px;
+    top: -20px;
+    right: 10px;
+    height: 170px;
+    max-width: fit-content;
+  }
+
+  .btm-sticky .pull-center p {
+    // display: none;
+  }
+}
+
+@media (max-width:720px) {
+  .btm-sticky {
+    height: 55vh;
+
+    .btm-cta-link {
+      padding-top: 2rem;
+    }
+
+    .popup-container {
+      grid-template-columns: 1fr;
+      gap: 10px;
+
+      &>* {
+        max-height: unset;
+      }
+
+      .pull-center {
+        align-items: center;
+      }
+
+      .pull-right img {
+        top: 0px;
+        right: 0;
+        // max-width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width:420px) {
+  // .btm-sticky .pull-left img.big {
+  //   display: none;
+  // }
+
+  // .btm-sticky .pull-left img.small {
+  //   display: inline;
+  // }
+
+  .btm-sticky .pull-left img {
+    max-width: 180px;
+    left: 0;
+    top: 5px;
+  }
+
+  .btm-sticky .pull-right img {
+    // max-width: 140px;
+    top: -24px;
+    right: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .popup-container {
+    // width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .popup-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup-container {
+    width: 1170px;
+  }
+}
+
+// Overlay 
+#popup-overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: block;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Black background with opacity */
+  z-index: 999;
+  /* Specify a stack order in case you're using a different order for other elements */
+  // cursor: pointer; /* Add a pointer on hover */
+}

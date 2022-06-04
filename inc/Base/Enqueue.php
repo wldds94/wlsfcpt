@@ -92,11 +92,12 @@ class Enqueue extends BaseController
 			wp_enqueue_style( 'wlninja_bootstrap_style_public', $this->plugin_url . 'dist/library/css/bootstrap.min.css' );
 			wp_enqueue_script( 'wlninja_bootstrap_script_public', $this->plugin_url . 'dist/library/js/bootstrap.min.js' );
 
-			// Custom App Scripts
-			wp_enqueue_style( 'wlsfcpt_style_public', $this->plugin_url . 'dist/css/style.css' );
-			wp_enqueue_script( 'wlsfcpt_script_public', $this->plugin_url . 'dist/js/public.js' );
 		}
 
+		// Custom App Scripts
+		wp_enqueue_style( 'wlsfcpt_style_public', $this->plugin_url . 'dist/css/style.css' );
+		wp_enqueue_script( 'wlsfcpt_script_public', $this->plugin_url . 'dist/js/public.js' );
+		
 		// Font Awesome Dependencies
 		wp_enqueue_style( 'wlninja-load-fa-600_public', $this->plugin_url . 'dist/library/css/fontawesome.all.min.css' );
 		

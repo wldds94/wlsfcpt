@@ -6,6 +6,7 @@ import WlsfcptFilter from "./archive/filters"
 import WlsfcptDimensions from "./layout/dimensions"
 import WlsfcptCrono from "./layout/crono"
 import WlsfcptSingle from "./single/single"
+import WlsfcptPopup from "./components/popup"
 
 $(function() {
     // $('#users-list-table').DataTable({})
@@ -15,4 +16,5 @@ $(function() {
     const dimensions = new WlsfcptDimensions()
     const crono = new WlsfcptCrono()
     const single = new WlsfcptSingle()
+    const popup = new WlsfcptPopup()
 })

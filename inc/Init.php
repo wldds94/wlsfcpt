@@ -18,6 +18,7 @@ final class Init
 	{
 		return [
 			Core\CustomPostType::class,
+			Core\PopUp::class,
 			// Base\AjaxRouting::class,
 			Base\Enqueue::class,
 			Base\I18n::class,

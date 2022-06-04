@@ -34,7 +34,6 @@ if ( ! function_exists( 'getAllTerpenicProfile' ) ) {
 			'earthy' => __( 'Earthy', 'wlsfcpt' ),
 			'agrumato' => __( 'Citrusy', 'wlsfcpt' ),
 			'fruity' => __( 'Fruity', 'wlsfcpt' ),
-			// 'na' => __( 'Not Available', 'wlsfcpt' )
 			'na' => '-'
 			// 'cheese' => __( 'Cheese', 'wlsfcpt' ),
 			// 'exotic'   => __( 'Esotico', 'wlsfcpt' ),
@@ -96,9 +95,9 @@ if ( ! function_exists( 'getAllTermsBySfProduct' ) ) {
 
 if ( ! function_exists( 'getTermsSlug' ) ) {
 	/**
-	 * Var_dump and die method
+	 * string $termProduct
 	 *
-	 * @return void
+	 * @return string
 	 */
 	function getTermsSlug( $termProduct ) {
 		$expl = explode('-', $termProduct);

@@ -9,13 +9,13 @@ get_header();
 <?php // dd($post); ?>
 <?php // echo $post->ID;
 $postProductID = $post->ID;
-// echo $postProductID . '<br>';
+echo $postProductID . '<br>';
 $termProduct = getAllTermsBySfProduct( $post->ID ); 
 // echo '<pre>';
 // print_r($post);
-// print_r($termProduct); echo '<br>';
+print_r($termProduct); echo '<br>';
 $termProductSlug = getTermsSlug($termProduct->slug);
-// echo $termProductSlug . '<br>';
+echo $termProductSlug . '<br>';
 
 $meta = get_post_meta($post->ID);
 // print_r($meta);
