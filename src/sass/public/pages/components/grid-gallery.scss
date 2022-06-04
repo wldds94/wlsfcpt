@@ -1,0 +1,106 @@
+.wlsfproduct-grid-gallery {
+    .wlsfprduct-masonry-grid-container {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr" 33vh "1fr 1fr" 33vh;
+        gap: 5px 5px;
+    }
+    
+    .wlsfprduct-masonry-grid-container .box {
+        position: relative;
+        background: #ccc;
+    }
+    
+    .wlsfprduct-masonry-grid-container .box.a {
+        grid-row: span 2;
+    }
+    
+    // .wlsfprduct-masonry-grid-container .box.b,
+    .wlsfprduct-masonry-grid-container .box.f,
+    .wlsfprduct-masonry-grid-container .box.h,
+    .wlsfprduct-masonry-grid-container .box.j {
+        grid-column: span 2;
+    }
+    
+    .wlsfprduct-masonry-grid-container .box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+        
+    .wlsfprduct-masonry-grid-container .box.h {
+        grid-column: span 1;
+    }
+
+    @media (max-width: 768px) {
+        .wlsfprduct-masonry-grid-container {
+            grid-template:
+                "1fr 1fr" 200px
+                "1fr 1fr" 150px;
+        }
+        .wlsfprduct-masonry-grid-container .box.a {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .wlsfprduct-masonry-grid-container .box.b, .wlsfprduct-masonry-grid-container .box.c {
+            grid-column: span 1;
+        }
+    }
+}
+
+// .wlsfproduct-grid-gallery {
+//     .wlsfprduct-masonry-grid-container {
+//         width: 100%;
+//         display: grid;
+//         grid-auto-flow: dense;
+//         grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+//         gap: 5px 5px;
+//     }
+    
+//     .wlsfprduct-masonry-grid-container .box {
+//         position: relative;
+//         background: #ccc;
+//     }
+    
+//     .wlsfprduct-masonry-grid-container .box.a {
+//         grid-row: span 2;
+//     }
+    
+//     .wlsfprduct-masonry-grid-container .box.b,
+//     .wlsfprduct-masonry-grid-container .box.f,
+//     .wlsfprduct-masonry-grid-container .box.h,
+//     .wlsfprduct-masonry-grid-container .box.j {
+//         grid-column: span 2;
+//     }
+    
+//     .wlsfprduct-masonry-grid-container .box img {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+    
+//     @media (max-width: 991px) {
+//         .wlsfprduct-masonry-grid-container {
+//             grid-template:
+//                 "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px;
+//         }
+//     }
+    
+    // @media (max-width: 768px) {
+    //     .wlsfprduct-masonry-grid-container {
+    //         grid-template:
+    //             "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px;
+    //     }
+    // }
+    
+//     .wlsfprduct-masonry-grid-container .box.h {
+//         grid-column: span 1;
+//     }
+// }

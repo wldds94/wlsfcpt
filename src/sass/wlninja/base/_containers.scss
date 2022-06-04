@@ -1,0 +1,49 @@
+.container,
+.container-fluid,
+.container-narrow {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    @include clearfix;
+}
+
+.container {
+    max-width: $xl;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.container-narrow {
+    max-width: $lg;
+}
+
+.wlsfcpt-container,
+.wlsfcpt-container-fluid,
+.wlsfcpt-container-narrow {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    @include clearfix;
+}
+
+.wlsfcpt-container {
+    max-width: $xl;
+}
+
+.wlsfcpt-container-fluid {
+    max-width: 100%;
+}
+
+.wlsfcpt-container-narrow {
+    max-width: $lg;
+}

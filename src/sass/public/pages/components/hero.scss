@@ -1,0 +1,204 @@
+#wlsfcpt_page {
+    .section.wl-product {
+        position: relative;
+        padding: 3rem;
+
+        .product-main-content {
+            max-width: 1440px;
+            margin: auto;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50rem;
+            z-index: -1;
+            width: calc(35% - 3rem);
+            height: 100%;
+
+            
+            background-color: #d7a72d;
+        }
+
+        &[data-slug="flowers"] {
+            &:after {
+                background-color: $green;
+            }
+        }
+
+        &[data-slug="hash"] {
+            &:after {
+                background-color: $brown;
+            }
+        }
+
+        &[data-slug="extracts"] { // exctracts
+            &:after {
+                background-color: $yellow;
+            }
+        }
+
+        &[data-slug="vape"] {
+            &:after {
+                background-color: $grey;
+            }
+        }
+
+        .wl-slider-product, .wl-product-content {
+            align-self: center;
+        }
+
+        // Slider
+        .wl-slider-product {
+            margin: 30px 0;
+        }
+
+        // Content
+        .wl-product-content {
+            h2.entry-title {
+                font-family: "ShimmerBold";
+                font-size: 4.5rem;
+                line-height: 5rem;
+            }
+
+            .meta-container {
+                // column-gap: 0.5rem;
+                justify-content: center;
+                // Test
+                display: flex;
+                flex-wrap: wrap;
+                
+                .single-meta {
+                    // background-color: #d7a72d;
+                    // padding: 0.5rem 1rem;
+                    // width: fit-content;
+                    // border-radius: 0.2rem;
+                    // color: white;
+                    width: fit-content;
+                    // margin-bottom: .5rem;
+                    display: flex;
+                    column-gap: 0.5rem;
+                    align-items: center;
+                    padding: .8em 1.5em;
+                    // Test
+                    // float: left;
+
+                    .wl-icon {
+                        min-width: 50px;
+                        max-width: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+
+            .wl-product-subtitle {
+                border-bottom: 1px solid #d6d6d6;
+                margin-bottom: 0;
+                padding-bottom: 4.5em;
+            }
+        }
+
+        .cta-product-container {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+
+            & > a {
+                text-transform: uppercase;
+                color: white;
+                width: fit-content;
+                background: #e3b267;
+                padding: 0.7rem 2rem;
+                border-radius: 5px;
+                font-weight: 700;
+
+                & > span {
+                    // margin-right: 10px;
+                }
+
+                & > i {
+                    margin-left: 10px;
+                    transition: all .4s ease-in-out;
+                }
+                
+                &:hover, &:focus {
+                    & > i {
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.sfproduct-intro-description, .sfproduct-after-description {
+    padding: 4rem 1.5rem;
+    max-width: 1280px;
+    margin: auto;
+
+    h4.title {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #wlsfcpt_page {
+        .section.wl-product {
+            padding: 1.8rem 1.8rem 3.5rem;
+
+            // Main Content
+            .product-main-content {
+                flex-direction: column-reverse;
+
+                .col-6 {
+                    width: 100%;
+                    max-width: 100%;
+
+                    &.wl-slider-product {
+                        margin: 0;
+
+                        #image-slider {
+                            ul {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Content
+            .wl-product-content {
+                .meta-container {
+                    // column-gap: 0.4rem;
+                    
+                    .single-meta {
+                        font-size: .9rem;
+                        margin-bottom: 0;
+                        margin-left: 8vh;
+                        padding: 0.5em 0.05rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .sfproduct-intro-description, .sfproduct-after-description {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+	body .mobile-meta-container .meta-container {
+        margin-left: 20px;
+		display: block !important;
+	}
+
+    // .mobile-hidden {
+    //     display: none !important;
+    // }
+}

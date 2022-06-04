@@ -1,0 +1,66 @@
+table.display {
+    padding-top: 20px;
+    width: 100%;
+
+    &.dataTable {
+        border-bottom: 1px solid #e6e6e6;
+
+        thead {
+            & > tr {
+                & > th {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    &.dataTable thead th, &.dataTable thead td {
+    
+    }
+
+    th.action {
+        text-align: center;
+        color: #F9C23C;
+    }
+
+    th.action, td.action, th.invoice-import, td.invoice-import {
+        width: 10% !important;
+        max-width: 10% !important;
+    }
+}
+
+/* DataTable FIlter */ 
+.dataTables_wrapper {
+    .dataTables_length {
+        select {
+            width: 80px;
+            padding: 1px 4px;
+        }
+    }
+
+    .dataTables_filter {
+        input {
+            padding: 1px 4px;
+        }
+    }
+}
+
+.content {
+    padding: 40px 0;
+    /*
+    .filter-wrapper{
+        padding: 30px 0;
+    }*/
+    
+    .filter-checkbox{
+        margin-left: 30px
+    }
+    .filter-checkbox:first-child{
+        margin-left:0
+    }
+}
+
+/** BUTTONS BAR */ 
+.buttonbar-container {
+    padding: 5px;
+}

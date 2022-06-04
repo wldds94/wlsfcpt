@@ -1,0 +1,59 @@
+# Copyright (C) 2022 WLPress
+# This file is distributed under the same license as the Wlsfpct plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Wl 1.0.0\n"
+"Report-Msgid-Bugs-To: https://walterlaidelli.com\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <WL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-04-06T10:14:00+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: wlsfcpt\n"
+
+#: SayFarmHelpers.php:31
+msgid "Cheese"
+msgstr "Cheese"
+
+#: SayFarmHelpers.php:32
+msgid "Esotico"
+msgstr "Exotique"
+
+#: SayFarmHelpers.php:33
+msgid "Nocciolato"
+msgstr "Noisette"
+
+#: SayFarmHelpers.php:34
+msgid "Terroso"
+msgstr "Terreux"
+
+#: SayFarmHelpers.php:35
+msgid "Agrumato"
+msgstr "Agrumes"
+
+#: SayFarmHelpers.php:36
+msgid "Fruttato"
+msgstr "Fruité"
+
+#: SayFarmHelpers.php:37
+msgid "Not Available"
+msgstr "Indisponible"
+
+#: archive.php:23
+msgid "View All"
+msgstr "Voir tout"
+
+#: archive.php:50
+msgid "Coming Soon"
+msgstr "À venir"
+
+#: slide-single.php:26
+msgid "Flowers"
+msgstr "Fleurs"
+
+#: slide-single.php:48
+msgid "Discover our products"
+msgstr "Découvrez nos produits"

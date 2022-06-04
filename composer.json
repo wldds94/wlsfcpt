@@ -1,0 +1,25 @@
+{
+    "name": "walter/wlsfcpt",
+    "description": "A plugin for SayFarm to manage all product like CPT",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "wldds94",
+            "email": "94924578+wldds94@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "cmb2/cmb2": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wlsfcpt\\": "./inc",
+            "Wlninja\\": "./inc/Wlninja"
+        },
+		"files": [ 
+            "./inc/Helpers.php",
+            "./inc/SayFarmHelpers.php",
+            "vendor/cmb2/cmb2/init.php"
+        ]
+    }
+}
