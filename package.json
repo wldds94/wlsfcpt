@@ -1,0 +1,66 @@
+{
+	"name": "wlsfcpt",
+	"version": "1.0.0",
+	"description": "SayFarm CPT Wordpress Plugin",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Walter Laidelli",
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/plugin-transform-async-to-generator": "^7.16.8",
+		"@babel/preset-env": "^7.2.3",
+		"@tinypixelco/laravel-mix-wp-blocks": "^1.1.0",
+		"@wordpress/babel-preset-default": "^6.0.0",
+		"@wordpress/dependency-extraction-webpack-plugin": "^3.1.3",
+		"@wordpress/eslint-plugin": "^9.0.5",
+		"@wordpress/prettier-config": "^1.0.4",
+		"babelify": "^10.0.0",
+		"browser-sync": "^2.24.4",
+		"browserify": "^16.2.3",
+		"browserify-shim": "^3.8.14",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^6.0.0",
+		"gulp-concat": "^2.5.2",
+		"gulp-if": "^2.0.2",
+		"gulp-notify": "^3.2.0",
+		"gulp-options": "^1.1.1",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^1.2.3",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-strip-debug": "^3.0.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-uglifycss": "^1.0.9",
+		"jquery": "^3.6.0",
+		"laravel-mix": "^6.0.19",
+		"normalize-scss": "^7.0.1",
+		"vinyl-buffer": "^1.0.0",
+		"vinyl-source-stream": "^2.0.0"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		],
+		"plugins": [
+			"@babel/plugin-transform-runtime"
+		]
+	},
+	"browserify": {
+		"transform": [
+			"browserify-shim"
+		]
+	},
+	"browser": {
+		"jquery": "./node_modules/jquery/dist/jquery.js"
+	},
+	"browserify-shim": {
+		"jquery": "$"
+	},
+	"license": "GPL-3.0",
+	"dependencies": {
+		"owl.carousel": "^2.3.4",
+		"swiper": "^8.1.4"
+	}
+}

@@ -1,0 +1,439 @@
+$flowers-green: rgb(33, 181, 41);
+
+.wlsf-archive-row {
+    // column-gap: 1rem;
+    row-gap: 1rem;
+
+    &.row {
+        width: calc(100% - 2 * .5rem);
+        margin: auto;
+    }
+
+    // & > * {
+    //     margin-bottom: 25px;
+    // }
+
+    .wlsfcpt-single-card-archive {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/** Horizontal Card */
+.wlsfcpt-single-card.wlsfcpt-single-card-horizontal {
+    padding: 0;
+
+    img,
+    h3 {
+        transition: all 0.3s ease-in-out;
+    }
+
+    &>.wlsf-single-product-container {
+        &>a {
+            &:hover {
+
+                // Code
+                .entry-title {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .single-information {
+        font-size: .9rem;
+        line-height: 1.5rem;
+        padding-right: .3rem !important;
+        padding-left: .3rem !important;
+    }
+
+    &[data-slug=flowers] {
+        .wlsfcpt-meta-info-section {
+            background-color: $greenFlowers;
+        }
+
+        .single-information {
+            &:nth-child(2) {
+                background-color: rgba($greenLightFlowers, .8);
+            }
+        }
+    }
+
+    &[data-slug=hash] {
+        .wlsfcpt-meta-info-section {
+            background-color: $brownHash;
+        }
+
+        .single-information:nth-child(2) {
+            background-color: rgba($brownLightHash, .8);
+        }
+    }
+
+    &[data-slug=vape] {
+        .wlsfcpt-meta-info-section {
+            background-color: $darkGreyVape;
+        }
+
+        .single-information:nth-child(2) {
+            background-color: rgba($lightGreyVape, .8);
+        }
+    }
+
+    &[data-slug=extracts] {
+        .wlsfcpt-meta-info-section {
+            background-color: $goldenExtract;
+        }
+
+        .single-information:nth-child(2) {
+            background-color: rgba($lightGoldenExtract, .8);
+        }
+    }
+
+    .wlsfcpt-image-section {
+        width: 100%;
+        height: auto;
+        max-height: 275px;
+        position: relative;
+        padding: 0 !important;
+        // background-color: white;
+
+        &.wlsfcpt-flowers {
+            border-top: 5px solid rgba($greenFlowers, .8);
+        }
+
+        &.wlsfcpt-hash {
+            border-top: 5px solid rgba($brownHash, .8);
+        }
+
+        &.wlsfcpt-vape {
+            border-top: 5px solid rgba($darkGreyVape, .8);
+        }
+
+        &.wlsfcpt-extracts {
+            border-top: 5px solid rgba($goldenExtract, .8);
+        }
+
+        .product-name-container {
+            position: absolute;
+            width: calc(100% - 2* .9rem); // 100%;
+            text-align: center;
+
+            h3.entry-title {
+                font-family: "ShimmerBold";
+                font-size: 3.5rem;
+                line-height: 4rem;
+                font-weight: 800;
+                text-align: center;
+            }
+        }
+
+        .wlsf-product-image-container {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            margin-top: 25px;
+
+            // Double Background Product / Shadoow -> View Archive Content Template 
+            // .wl-anime-container {
+            //     #wl-product-scene {
+            //         height: 200px;
+            //         width: auto;
+            //         max-width:400px;
+            //         border:3px solid #222;  
+            //         margin: 10px 0; 
+            //         position: relative;
+
+            //         // background:
+            //         //   url($product) no-repeat center center / auto 250px,
+            //         //   url($shadow) no-repeat center center / auto 250px;
+            //     }
+            // }
+        }
+
+        .extra-label-container {
+            position: absolute;
+            bottom: 1%;
+            left: 1%;
+            padding: 0.35rem 1.5rem !important;
+            background-color: #E3B267;
+            font-weight: 600;
+            font-size: .7rem;
+            letter-spacing: .03rem;
+        }
+    }
+
+    .wlsfcpt-meta-info-section {
+        display: flex;
+        padding: 0 !important;
+
+        p.text-content {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+
+
+
+/* ------------------- OLD -------------------- */
+/** Basic **/
+.wlsfcpt-single-card {
+    .wlsf-single-product-container {
+        max-width: 100%;
+        margin: auto;
+
+        // height: 250px;
+        p,
+        span,
+        a,
+        small,
+        div {
+            color: white;
+        }
+
+        h3 {
+            margin-top: .2rem;
+            margin-bottom: 0;
+        }
+
+        a.wlsfproduct-single-link {
+            padding: 0 !important;
+        }
+
+        .border-image-container {
+            height: 20rem;
+            position: relative;
+            border: solid;
+
+            &.wlsfcpt-flowers {
+                border-color: rgba($color: $greenFlowers, $alpha: .8);
+            }
+
+            &.wlsfcpt-hash {
+                border-color: rgba($color: $brownHash, $alpha: .8);
+            }
+
+            &.wlsfcpt-extracts {
+                border-color: rgba($color: $goldenExtract, $alpha: .8);
+            }
+
+            &.wlsfcpt-vape {
+                border-color: rgba($color: $greyVape, $alpha: .8);
+            }
+
+            h3.entry-title {
+                font-family: "ShimmerBold";
+                font-size: 3.5rem;
+                line-height: 4rem;
+                font-weight: 800;
+                text-align: center;
+            }
+
+            .extra-label-container {
+                position: absolute;
+                bottom: 0;
+
+                .most-label {
+                    background-color: rgba($color: #000000, $alpha: .3);
+                    display: inline-block;
+                    color: white;
+                    font-weight: 600;
+                    font-size: .8rem;
+                    border-radius: 2%;
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                }
+            }
+
+            .wlsf-product-image-container {
+                position: absolute;
+                top: 60%;
+                transform: translate(0, -50%);
+            }
+        }
+
+        .product-info-container {
+            position: relative;
+
+            &.wlsfcpt-flowers {
+                background-color: rgba($color: $greenFlowers, $alpha: .8);
+            }
+
+            &.wlsfcpt-hash {
+                background-color: rgba($color: $brownHash, $alpha: .8);
+            }
+
+            &.wlsfcpt-extracts {
+                background-color: rgba($color: $goldenExtract, $alpha: .8);
+            }
+
+            &.wlsfcpt-vape {
+                background-color: rgba($color: $greyVape, $alpha: .8);
+            }
+
+            .card-informations {
+                max-width: calc(100% - 2 * 0.5rem);
+                top: calc(50% + 2 * 0.5rem);
+                position: absolute;
+                transform: translate(0, -50%);
+                margin: auto;
+
+                &>.col {
+                    margin-bottom: 0;
+
+                    .meta-table-container {
+                        position: relative;
+                        top: calc(50% + 0.5rem);
+                        transform: translate(0, -50%);
+                    }
+                }
+            }
+
+            .cta-container {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                border-radius: 50%;
+
+                &>a {
+                    color: black;
+                }
+
+                // .cta-content {
+                //     display: flex;
+                //     width: 100%;
+                //     height: 100%;
+                //     background: white;
+                // }
+            }
+
+            // Check if is inserted in box image
+            // .extra-label-container {
+            //     .most-label {
+            //         background-color: rgba($color: #000000, $alpha: .3);
+            //         display: inline-block;
+            //         color: white;
+            //         font-weight: 600;
+            //         font-size: .8rem;
+            //         border-radius: 2%;
+            //         padding-top: 0 !important;
+            //         padding-bottom: 0 !important;
+            //     }
+            // }
+
+            .single-information {
+                display: flex;
+                flex-direction: column;
+                column-gap: 0.5rem;
+                // height: 4rem;
+
+                .product-attribute-value {}
+            }
+        }
+
+    }
+}
+
+
+// Items
+.item {
+    opacity: 0;
+}
+
+.item.is-visible {
+    animation: Items 600ms ease-in forwards;
+}
+
+.fadeout {
+    animation: fadeOut ease-in 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+
+    100% {
+        opacity: 0;
+        left: 2000px
+    }
+}
+
+@keyframes Items {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotateY(90deg);
+    }
+
+    60% {
+        transform: scale(1.05);
+    }
+
+    90% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/** AUX CTA **/
+.aux-cta-container {
+    position: relative;
+}
+
+.aux-cta-arrow {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        // border-bottom: 5px solid #06A8FF; border-right: 5px solid #06A8FF;
+        border-bottom: 5px solid #3b3b38;
+        border-right: 5px solid #3b3b38;
+        transform: rotate(-45deg);
+        margin: -10px;
+        animation: animate_aux_cta 2s infinite;
+
+        &:nth-child(2) {
+            animation-delay: -0.2s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: -0.4s;
+        }
+    }
+}
+
+@keyframes animate_aux_cta {
+    0% {
+        opacity: 0;
+        transform: rotate(-45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-45deg) translate(20px, 20px);
+    }
+}
+
+/** END AUX CTA **/

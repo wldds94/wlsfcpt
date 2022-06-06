@@ -1,0 +1,786 @@
+<!-- BAKCUP 220504 -->
+
+<div id="wlsfcpt_page">
+
+	<div class="section wl-product">
+
+		<div class="row product-main-content">
+
+			<div class="col-6 wl-slider-product">
+				<div id="wl-slider-wrapper" data-slider="wlsfcpt-product">
+
+
+					<div id="image-slider">
+						
+						<ul>
+							<li class="active-img">
+                            <?php if( has_post_thumbnail() ) : ?>
+                                <?php $featured_image = get_the_post_thumbnail_url( get_the_ID() ); ?>
+                                <picture>
+                                    <img
+                                        src="<?php echo esc_url( $featured_image ); ?>"
+                                        class="img-fluid d-block mx-auto wp-post-image" alt="" loading="lazy"
+                                        srcset="<?php echo esc_url( $featured_image ); ?> 333w, <?php echo esc_url( $featured_image ); ?> 250w, <?php echo esc_url( $featured_image ); ?> 120w"
+                                        sizes="(max-width: 333px) 100vw, 333px" data-eio="p" />
+                                </picture>
+                            <?php else : ?>
+                                <picture>
+									<img srcset="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" 
+										src="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" 
+										alt="Immagine non trovata" />
+								</picture>
+                            <?php endif; ?>							
+							</li>
+                            <li>
+                                <img srcset="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" 
+										src="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" 
+										alt="Immagine non trovata" />
+							</li>
+							<li>
+								<img src="https://36.media.tumblr.com/0eb59d5c5bc5cde7737bb99d527247ca/tumblr_nxi8jzk8OS1rwfs76o1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/d4e261711a84707195d8fb9b0a94dccb/tumblr_o05avp3WSh1rn52wlo1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/817bd6a18d9ca6877c9d5a1b7d33c198/tumblr_mx1cizinbl1qljihqo1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/6fbf40647afad248b55af46361aea7f9/tumblr_nvdl4xGcxB1r3zwc2o1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://41.media.tumblr.com/77a37a7053a8d4b7b11be6d0bfed1073/tumblr_n7eb66mNme1se0g8bo1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/tumblr_mbupbf3nR31rfxi00o1_r1_540.jpg" alt="" />
+							</li>
+						</ul>
+				
+					</div> <!-- #image-slider -->
+				
+				
+				</div> <!-- #wl-slider-wrapper -->
+			</div> <!-- .wl-slider-product -->
+
+			<div class="col-6 wl-product-content">
+
+				<h2 class="entry-title text-center">Sweet Berry</h3>
+
+				<div class="mobile-hidden wrapper-desktop">
+					<p class="wl-product-subtitle">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</p>
+	
+					<div class="meta-container mobile-hidden">
+						<div class="single-meta">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_family_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Sativa
+							</span>
+						</div>
+	
+						<div class="single-meta">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayFarm_thc_level_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Secondo legge vigente
+							</span>
+						</div>
+	
+						<div class="single-meta">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_taste_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Non disponibile
+							</span>
+						</div>
+					</div>
+				</div>
+				
+			</div> <!-- .wl-product-content -->
+			
+		</div>
+		
+		<div class="row wl-product-content">
+			<!-- <div class="col col-sm-3 col-md-4"></div> -->
+			<div class="mobile-meta-container">
+				<div class="meta-container d-none">
+					<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+						<span class="wl-icon">
+							<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_family_black.png" alt="" srcset="">
+						</span>
+						<span class="wl-text">
+							Sativa
+						</span>
+					</div>
+		
+					<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+						<span class="wl-icon">
+							<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayFarm_thc_level_black.png" alt="" srcset="">
+						</span>
+						<span class="wl-text">
+							Secondo legge vigente
+						</span>
+					</div>
+		
+					<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+						<span class="wl-icon">
+							<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_taste_black.png" alt="" srcset="">
+						</span>
+						<span class="wl-text">
+							Non disponibile
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div> <!-- .section.wl-product -->
+
+	<div id="thumbnail-wrapper">
+
+		<div id="thumbnail" data-slider="wlsfcpt-product">
+			<ul>
+                <?php if( has_post_thumbnail() ) : ?><li class="active"><img src="<?php echo $featured_image; ?>" alt="" /></li><?php endif; ?>
+                <li class="<?php echo has_post_thumbnail() ? '' : 'active'; ?>"><img src="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" alt="" /></li>
+				<li><img src="https://36.media.tumblr.com/0eb59d5c5bc5cde7737bb99d527247ca/tumblr_nxi8jzk8OS1rwfs76o1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/d4e261711a84707195d8fb9b0a94dccb/tumblr_o05avp3WSh1rn52wlo1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/817bd6a18d9ca6877c9d5a1b7d33c198/tumblr_mx1cizinbl1qljihqo1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/6fbf40647afad248b55af46361aea7f9/tumblr_nvdl4xGcxB1r3zwc2o1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://41.media.tumblr.com/77a37a7053a8d4b7b11be6d0bfed1073/tumblr_n7eb66mNme1se0g8bo1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/tumblr_mbupbf3nR31rfxi00o1_r1_540.jpg" alt="" /></li>
+			</ul>
+		</div> <!-- #thumbnail -->
+
+	</div><!-- #thumbnail-wrapper -->
+	
+	<div class="sfproduct-intro-description text-center">
+		<h4 class="title">Una ricetta unica.</h4>
+		<p class="desc-content">
+			Dalla ricetta Cotta 21, creata dalla selezione dei migliori farri italiani e dei migliori malti, nasce la Bionda non filtrata dei Mastri Birrai Umbri.<br><br>
+	
+			Birra Speciale Bionda non filtrata e non pastorizzata, rifermentata in bottiglia, prodotta in Italia con il metodo dell’alta fermentazione.<br>
+			La Bionda non filtrata dei Mastri Birrai Umbri nasce dalla ricetta Cotta 21, creata dalla selezione dei migliori farri italiani e dei migliori malti. 
+		</p>
+	</div> <!-- .sfproduct-intro-description -->
+
+</div><!-- #wlsfcpt_page -->
+
+
+
+<div class="wlsfproduct-masonry">
+	<div class="wl-masonry-container">
+		<div class="masonry">
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560164365-0811bf2ee413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560178783-7d75fc1261e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3834&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560091410-7175d14a48f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80">
+			</div>
+			<!-- <div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560082847-0fe9da933ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80">
+			</div> -->
+		</div>
+	</div>
+</div> <!-- .wlsfproduct-masonry -->
+
+<div class="wlsfproduct-grid-gallery">
+	<div class="wlsfprduct-masonry-grid-container">
+		<div class="box a"><img src="https://images.unsplash.com/photo-1559962200-ba8b28568ba8?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=358&amp;q=80" alt=""></div>
+		<div class="box b"><img src="https://images.unsplash.com/photo-1550856015-de3a3956c67d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt=""></div>
+		<div class="box c"><img src="https://images.unsplash.com/photo-1559888828-551abffa1019?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt=""></div>
+		<div class="box d"><img src="https://images.unsplash.com/photo-1559925811-cf920c962023?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1534&amp;q=80" alt=""></div>
+		<div class="box e"><img src="https://images.unsplash.com/photo-1559912553-fc5637d88768?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=435&amp;q=80" alt=""></div>
+		<div class="box f"><img src="https://images.unsplash.com/photo-1559626627-cb31b201e27f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=497&amp;q=80" alt=""></div>
+	</div>
+</div> <!-- .wlsfproduct-grid-gallery -->
+
+<div class="sfproduct-after-description text-center">
+	<h4 class="title">Di colore biondo e velato ha una schiuma persistente e compatta..</h4>
+	<p class="desc-content">
+		L’aroma è ricco di sentori agrumati, note speziate e di frutta estiva.<br>
+		Il gusto delicato e morbido del farro è accompagnato dalle note erbacee del luppolo che i nostri Mastri Birrai hanno sapientemente selezionato per voi.<br><br>
+		Ideale come aperitivo, si abbina perfettamente con formaggi freschi, pesce, crostacei. Il metodo dell’alta fermentazione e la non filtrazione possono creare un sedimento naturale sul fondo della bottiglia.
+	</p>
+</div> <!-- .sfproduct-after-description -->
+
+<div class="wl-highlight-crosslink">
+	<div class="title">
+		<h4 class="title-content text-center">Scopri le altre birre</h4>
+	</div>
+	<div class="wl-slide-products">
+	
+		<div id="carousel">
+	
+			<div class="hideLeft">
+				<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+			</div>
+	
+			<div class="prevLeftSecond">
+				<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+			</div>
+	
+			<div class="prev">
+				<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+			</div>
+	
+			<div class="selected">
+				<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+			</div>
+	
+			<div class="next">
+				<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+			</div>
+	
+			<div class="nextRightSecond">
+				<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+			</div>
+	
+			<div class="hideRight">
+				<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+			</div>
+	
+		</div> <!-- #carousel -->
+		
+		<div class="buttons">
+			<button id="prev" class="wl-carousel-nav"><i class="fa-solid fa-arrow-left"></i><!-- Prev --></button>
+			<button id="next" class="wl-carousel-nav"><i class="fa-solid fa-arrow-right"></i><!-- Next --></button>
+		</div>
+		
+		<script>
+			jQuery(function ($) {
+				function moveToSelected(element) {
+		
+					if (element == "next") {
+						var selected = $(".selected").next();
+					} else if (element == "prev") {
+						var selected = $(".selected").prev();
+					} else {
+						var selected = element;
+					}
+		
+					var next = $(selected).next();
+					var prev = $(selected).prev();
+					var prevSecond = $(prev).prev();
+					var nextSecond = $(next).next();
+		
+					$(selected).removeClass().addClass("selected");
+		
+					$(prev).removeClass().addClass("prev");
+					$(next).removeClass().addClass("next");
+		
+					$(nextSecond).removeClass().addClass("nextRightSecond");
+					$(prevSecond).removeClass().addClass("prevLeftSecond");
+		
+					$(nextSecond).nextAll().removeClass().addClass('hideRight');
+					$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+		
+				}
+		
+				// Eventos teclado
+				$(document).keydown(function (e) {
+					switch (e.which) {
+						case 37: // left
+							moveToSelected('prev');
+							break;
+		
+						case 39: // right
+							moveToSelected('next');
+							break;
+		
+						default: return;
+					}
+					e.preventDefault();
+				});
+		
+				$('#carousel div').click(function () {
+					moveToSelected($(this));
+				});
+		
+				$('#prev').click(function () {
+					moveToSelected('prev');
+				});
+		
+				$('#next').click(function () {
+					moveToSelected('next');
+				});
+			})
+		
+		</script>
+	</div> <!-- .wl-slide-products -->
+</div>
+
+
+<!-- BACKUP-OLD -->
+<div id="wlsfcpt_page">
+
+	<div class="section wl-product">
+
+		<div class="row">
+
+			<div class="col-6 wl-slider-product">
+				<div id="wl-slider-wrapper" data-slider="wlsfcpt-product">
+
+
+					<div id="image-slider">
+						
+						<ul>
+							<li class="active-img">
+								<picture>
+									<img srcset="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" 
+										src="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" 
+										alt="Immagine non trovata" />
+								</picture>
+								
+							</li>
+							<li>
+								<img src="https://36.media.tumblr.com/0eb59d5c5bc5cde7737bb99d527247ca/tumblr_nxi8jzk8OS1rwfs76o1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/d4e261711a84707195d8fb9b0a94dccb/tumblr_o05avp3WSh1rn52wlo1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/817bd6a18d9ca6877c9d5a1b7d33c198/tumblr_mx1cizinbl1qljihqo1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/6fbf40647afad248b55af46361aea7f9/tumblr_nvdl4xGcxB1r3zwc2o1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://41.media.tumblr.com/77a37a7053a8d4b7b11be6d0bfed1073/tumblr_n7eb66mNme1se0g8bo1_540.jpg"
+									alt="" />
+							</li>
+							<li>
+								<img src="https://40.media.tumblr.com/tumblr_mbupbf3nR31rfxi00o1_r1_540.jpg" alt="" />
+							</li>
+						</ul>
+				
+					</div> <!-- #image-slider -->
+				
+				
+				</div> <!-- #wl-slider-wrapper -->
+			</div> <!-- .wl-slider-product -->
+
+			<div class="col-6 wl-product-content">
+
+				<h2 class="entry-title text-center">Sweet Berry</h3>
+
+				<div class="mobile-hidden wrapper-desktop">
+					<p class="wl-product-subtitle">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					</p>
+	
+					<div class="meta-container mobile-hidden">
+						<div class="single-meta">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_family_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Sativa
+							</span>
+						</div>
+	
+						<div class="single-meta">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayFarm_thc_level_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Secondo legge vigente
+							</span>
+						</div>
+	
+						<div class="single-meta">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_taste_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Non disponibile
+							</span>
+						</div>
+					</div>
+				</div>
+					<!-- <div class="meta-container d-flex row mobile-hidden">
+						<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_family_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Sativa
+							</span>
+						</div>
+	
+						<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayFarm_thc_level_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Secondo legge vigente
+							</span>
+						</div>
+	
+						<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+							<span class="wl-icon">
+								<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_taste_black.png" alt="" srcset="">
+							</span>
+							<span class="wl-text">
+								Non disponibile
+							</span>
+						</div>
+					</div>
+				</div> -->
+				
+			</div> <!-- .wl-product-content -->
+			
+		</div>
+		
+		<div class="row wl-product-content">
+			<!-- <div class="col col-sm-3 col-md-4"></div> -->
+			<div class="mobile-meta-container">
+				<div class="meta-container d-none">
+					<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+						<span class="wl-icon">
+							<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_family_black.png" alt="" srcset="">
+						</span>
+						<span class="wl-text">
+							Sativa
+						</span>
+					</div>
+		
+					<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+						<span class="wl-icon">
+							<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayFarm_thc_level_black.png" alt="" srcset="">
+						</span>
+						<span class="wl-text">
+							Secondo legge vigente
+						</span>
+					</div>
+		
+					<div class="single-meta col col-sm-12 col-md-6 col-xl-4">
+						<span class="wl-icon">
+							<img src="http://fismv2.it/wp-content/plugins/wlsfcpt/dist/images/icons/sayfarm_taste_black.png" alt="" srcset="">
+						</span>
+						<span class="wl-text">
+							Non disponibile
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div> <!-- .section.wl-product -->
+
+	<div id="thumbnail-wrapper">
+
+		<div id="thumbnail" data-slider="wlsfcpt-product">
+			<ul>
+				<li class="active"><img src="https://40.media.tumblr.com/tumblr_m92vwz7XLZ1qf4jqio1_540.jpg" alt="" /></li>
+				<li><img src="https://36.media.tumblr.com/0eb59d5c5bc5cde7737bb99d527247ca/tumblr_nxi8jzk8OS1rwfs76o1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/d4e261711a84707195d8fb9b0a94dccb/tumblr_o05avp3WSh1rn52wlo1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/817bd6a18d9ca6877c9d5a1b7d33c198/tumblr_mx1cizinbl1qljihqo1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/6fbf40647afad248b55af46361aea7f9/tumblr_nvdl4xGcxB1r3zwc2o1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://41.media.tumblr.com/77a37a7053a8d4b7b11be6d0bfed1073/tumblr_n7eb66mNme1se0g8bo1_540.jpg"
+						alt="" /></li>
+				<li><img src="https://40.media.tumblr.com/tumblr_mbupbf3nR31rfxi00o1_r1_540.jpg" alt="" /></li>
+			</ul>
+		</div> <!-- #thumbnail -->
+
+	</div><!-- #thumbnail-wrapper -->
+	
+	<div class="sfproduct-intro-description text-center">
+		<h4 class="title">Una ricetta unica.</h4>
+		<p class="desc-content">
+			Dalla ricetta Cotta 21, creata dalla selezione dei migliori farri italiani e dei migliori malti, nasce la Bionda non filtrata dei Mastri Birrai Umbri.<br><br>
+	
+			Birra Speciale Bionda non filtrata e non pastorizzata, rifermentata in bottiglia, prodotta in Italia con il metodo dell’alta fermentazione.<br>
+			La Bionda non filtrata dei Mastri Birrai Umbri nasce dalla ricetta Cotta 21, creata dalla selezione dei migliori farri italiani e dei migliori malti. 
+		</p>
+	</div> <!-- .sfproduct-intro-description -->
+
+</div><!-- #wlsfcpt_page -->
+
+
+
+<div class="wlsfproduct-masonry">
+	<div class="wl-masonry-container">
+		<div class="masonry">
+			<!-- <div class="brick">
+				<img src="https://image.freepik.com/foto-gratuito/trama-di-pittura-ad-olio-viola_53876-94002.jpg">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1558980394-dbb977039a2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1556228841-a3c527ebefe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1524&q=80">
+			</div> -->
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560164365-0811bf2ee413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560178783-7d75fc1261e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3834&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560091410-7175d14a48f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560082847-0fe9da933ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80">
+			</div>
+			<!-- <div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560087219-ce9ab9604990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1576&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560100261-226dff8daa82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560145836-d22431066353?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2300&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560151599-d33f5ffc5fdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560097282-32eef95738b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1531&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560121161-4712d6f6cafc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560150063-7fc89bd73bd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560138040-a430c9552273?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1520&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1549291536-e425d96af374?ixlib=rb-1.2.1&auto=format&fit=crop&w=3067&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1553367998-6ea7e682d40c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1900&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560139517-d689341179a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3451&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560033311-b9b5cf8cbaa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560053260-ad5b8f3170f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1560044267-be94615b8d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1559989960-106e6cd6273e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3500&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1559924508-1461423083c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3067&q=80">
+			</div>
+			<div class="brick">
+				<img
+					src="https://images.unsplash.com/photo-1559861796-cc4eb7e3cf01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1901&q=80">
+			</div> -->
+		</div>
+	</div>
+</div> <!-- .wlsfproduct-masonry -->
+
+
+<div class="wlsfproduct-grid-gallery">
+	<div class="container">
+		<div class="box a"><img
+				src="https://images.unsplash.com/photo-1559962200-ba8b28568ba8?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=358&amp;q=80"
+				alt=""></div>
+		<div class="box b"><img
+				src="https://images.unsplash.com/photo-1550856015-de3a3956c67d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"
+				alt=""></div>
+		<div class="box c"><img
+				src="https://images.unsplash.com/photo-1559888828-551abffa1019?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"
+				alt=""></div>
+		<div class="box d"><img
+				src="https://images.unsplash.com/photo-1559925811-cf920c962023?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1534&amp;q=80"
+				alt=""></div>
+		<div class="box e"><img
+				src="https://images.unsplash.com/photo-1559912553-fc5637d88768?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=435&amp;q=80"
+				alt=""></div>
+		<div class="box f"><img
+				src="https://images.unsplash.com/photo-1559626627-cb31b201e27f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=497&amp;q=80"
+				alt=""></div>
+		<div class="box g"><img
+				src="https://images.unsplash.com/photo-1559924355-cff32605824e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80"
+				alt=""></div>
+		<div class="box h"><img
+				src="https://images.unsplash.com/photo-1559938136-5d15e5c7a574?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"
+				alt=""></div>
+		<div class="box i"><img
+				src="https://images.unsplash.com/photo-1555985202-12975b0235dc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=749&amp;q=80"
+				alt=""></div>
+		<div class="box j"><img
+				src="https://images.unsplash.com/photo-1559837957-bab8edc53c85?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80"
+				alt=""></div>
+	</div>
+</div> <!-- .wlsfproduct-grid-gallery -->
+
+<div class="sfproduct-after-description text-center">
+	<h4 class="title">Di colore biondo e velato ha una schiuma persistente e compatta.</h4>
+	<p class="desc-content">
+		L’aroma è ricco di sentori agrumati, note speziate e di frutta estiva.<br>
+		Il gusto delicato e morbido del farro è accompagnato dalle note erbacee del luppolo che i nostri Mastri Birrai hanno sapientemente selezionato per voi.<br><br>
+		Ideale come aperitivo, si abbina perfettamente con formaggi freschi, pesce, crostacei. Il metodo dell’alta fermentazione e la non filtrazione possono creare un sedimento naturale sul fondo della bottiglia.
+	</p>
+</div> <!-- .sfproduct-after-description -->
+
+<div class="wl-highlight-crosslink">
+	<div class="title">
+		<h4 class="title-content text-center">Scopri le altre birre</h4>
+	</div>
+	<div class="wl-slide-products">
+	
+		<div id="carousel">
+	
+			<div class="hideLeft">
+				<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+			</div>
+	
+			<div class="prevLeftSecond">
+				<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+			</div>
+	
+			<div class="prev">
+				<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+			</div>
+	
+			<div class="selected">
+				<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+			</div>
+	
+			<div class="next">
+				<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+			</div>
+	
+			<div class="nextRightSecond">
+				<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+			</div>
+	
+			<div class="hideRight">
+				<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+			</div>
+	
+		</div> <!-- #carousel -->
+		
+		<div class="buttons">
+			<button id="prev" class="wl-carousel-nav"><i class="fa-solid fa-arrow-left"></i><!-- Prev --></button>
+			<button id="next" class="wl-carousel-nav"><i class="fa-solid fa-arrow-right"></i><!-- Next --></button>
+		</div>
+		
+		<script>
+			jQuery(function ($) {
+				function moveToSelected(element) {
+		
+					if (element == "next") {
+						var selected = $(".selected").next();
+					} else if (element == "prev") {
+						var selected = $(".selected").prev();
+					} else {
+						var selected = element;
+					}
+		
+					var next = $(selected).next();
+					var prev = $(selected).prev();
+					var prevSecond = $(prev).prev();
+					var nextSecond = $(next).next();
+		
+					$(selected).removeClass().addClass("selected");
+		
+					$(prev).removeClass().addClass("prev");
+					$(next).removeClass().addClass("next");
+		
+					$(nextSecond).removeClass().addClass("nextRightSecond");
+					$(prevSecond).removeClass().addClass("prevLeftSecond");
+		
+					$(nextSecond).nextAll().removeClass().addClass('hideRight');
+					$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+		
+				}
+		
+				// Eventos teclado
+				$(document).keydown(function (e) {
+					switch (e.which) {
+						case 37: // left
+							moveToSelected('prev');
+							break;
+		
+						case 39: // right
+							moveToSelected('next');
+							break;
+		
+						default: return;
+					}
+					e.preventDefault();
+				});
+		
+				$('#carousel div').click(function () {
+					moveToSelected($(this));
+				});
+		
+				$('#prev').click(function () {
+					moveToSelected('prev');
+				});
+		
+				$('#next').click(function () {
+					moveToSelected('next');
+				});
+			})
+		
+		</script>
+	</div> <!-- .wl-slide-products -->
+</div>

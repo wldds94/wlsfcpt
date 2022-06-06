@@ -1,0 +1,167 @@
+// $random2 : hsla(random(255), 30, 50, 1) ;
+// $random : lighten($random2, 10%) ;
+// $random3 : rgba(255, 255, 255, .4) ;
+
+// *::selection { background-color:darken($random, 30%); }
+
+// html { height:100% }    
+
+// body { height:100%; background-color:$random; width:100%; font-family:verdana, sans-serif; color:$random; text-shadow:1px 1px darken($random, 35%); -webkit-transform: translateZ(0); transition:all 1s; }
+
+// .body { background-color:darken($random, 40%); transition:all 1s; }
+
+// h1 { text-align:center; color:white; }
+
+// .container { width:100%; margin:auto; height:100% }
+
+// .center { width:1100px; margin:auto; }
+
+// .wrapper { width:250px; height:250px; margin:10px; overflow:hidden; float:left; border:1px dotted white; }
+
+// .wl-demo-overlay { background-color:$random2; height:250px; width:250px; position:relative; &::before { background-color:$random3; position:relative; z-index:3; content:attr(data); height:250px; width:250px; display:block; line-height:250px; text-align:center; font-size:30px; } &:hover::before {  } &::after{  content:attr(data); font-size:32px; color:white; line-height:250px; position:relative; top:-250px; text-align:center; display:block; transition:all 1s; } &:hover::after { -webkit-filter:blur(3px); transition:all 0.5s } }
+
+// .top { &::before {  top:-250px; transition:top 1s; } &:hover::before { top:0; transition:top .5s; } }
+
+// .bottom { &::before {  bottom:-250px; transition:bottom 1s; } &:hover::before { bottom:0; transition:bottom .5s; } }
+
+// .left { &::before { left:-250px; transition:left 1s; } &:hover::before { left:0; transition:left .5s; } }
+
+// .right { &::before {  right:-250px; transition:right 1s; } &:hover::before { right:0; transition:right .5s; } }
+
+#wl-mask-overlay {
+
+    &.open {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.5;
+    }
+    
+}
+
+// Dynamic
+.wl-over-layable {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+/** Spinner **/
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+.wlank-spinner {
+    position: relative;
+   
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    // Default Medium Spot
+    &:before {      
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: #07d;
+        border-bottom-color: #07d;
+        animation: spinner .8s ease infinite;
+        z-index: 1;
+    }
+
+    // Rainbow
+    &.rainbow:before {
+        /*content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;*/
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 1px solid #f6f;
+        border-top-color: #0e0;
+        border-right-color: #0dd;
+        border-bottom-color: #f90;
+        animation: spinner .6s linear infinite;
+    }
+
+    // Black
+    &.black:before {
+        /*content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;*/
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        border-top-color: #000;
+        animation: spinner .6s linear infinite;
+    }
+
+    // Ligth
+    &.light:before {
+        /*content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;*/
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        margin-left: -15px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        border-top-color: #07d;
+        animation: spinner .6s linear infinite;
+    }
+
+    // Medium
+    &.medium:before {
+        /*content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;*/
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border-top: 2px solid #07d;
+        border-right: 2px solid transparent;
+        animation: spinner .6s linear infinite;
+    }
+
+}
